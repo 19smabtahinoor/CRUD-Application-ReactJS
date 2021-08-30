@@ -1,8 +1,10 @@
 # CRUD Application with React JS
 
-## Live Site : [CRUD Application Demo](https://crud-application-react-js.vercel.app/)
+## ▶ Live Site : [CRUD Application Demo](https://crud-application-react-js.vercel.app/)
 
----
+## 💻 Developed By
+
+![Developer PIC](https://avatars.githubusercontent.com/u/73340940?s=48&v=4)
 
 ## 🚀 Connect with me
 
