@@ -9,7 +9,7 @@ const EditUser = () => {
             <div className="mt-4">
                 <form>
                     <div className="mb-3">
-                        <label for="username" className="form-label">✍ Edit Name</label>
+                        <label htmlFor="username" className="form-label">✍ Edit Name</label>
                         <input type="text" className="form-control py-3" id="username" />
                     </div>
 

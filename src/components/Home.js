@@ -6,8 +6,7 @@ const Home = () => {
     return (
         <div className="my-5 w-75 mx-auto">
             <Heading />
-            <UserList name={'Abtahi Noor'} />
-            <UserList name={' Geyani Manus {Kobi} '}/>
+            <UserList />
         </div>
     )
 }
