@@ -4,10 +4,10 @@ import AppReducer from './AppReducer';
 //Initial State 
 const initialState = {
     users:[
-        { id: uuid(),name:'Sumit Saha'},
-        { id: uuid(),name:'Freelancer Nasim'},
-        { id: uuid(),name:'Jhankar Mahbub'},
-        { id: uuid(),name:'Anisul Islam'},
+        { id: uuid(), name:'Jhankar Mahbub'},
+        { id: uuid(), name:'Sumit Saha'},
+        { id: uuid(), name:'Anisul Islam'},
+        { id: uuid(), name:'Freelancer Nasim '},
         { id: uuid(),name:'Khalid Saifullah'},
     ]
 }
