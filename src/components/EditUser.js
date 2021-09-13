@@ -1,16 +1,35 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext, useState, useEffect } from 'react';
+import { NavLink, useHistory } from 'react-router-dom';
+import { GlobalContext } from '../context/GlobalState';
 
-const EditUser = () => {
+
+const EditUser = (props) => {
+    const [selectedUser, setSelectedUser] = useState({id:'',name:''})
+    const { users,editUser } = useContext(GlobalContext);
+    const history = useHistory();
+    const currentUserid = props.match.params.id;
+
+    useEffect(() => {
+        const userId = currentUserid;
+        const selecteduser = users.find(user => user.id === userId);
+        setSelectedUser(selecteduser)
+    },[currentUserid,users])
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        editUser(selectedUser)
+        history.push('/');
+    }
+
     return (
         <div className="my-5 w-75 mx-auto">
             <h1>🤵 Edit User</h1>
 
             <div className="mt-4">
-                <form>
+                <form onSubmit={onSubmit}>
                     <div className="mb-3">
                         <label htmlFor="username" className="form-label">✍ Edit Name</label>
-                        <input type="text" className="form-control py-3" id="username" />
+                        <input type="text" className="form-control py-3" id="username" name="name" value={selectedUser.name} onChange={(e) => setSelectedUser({ ...selectedUser, [ e.target.name] : e.target.value})}/>
                     </div>
 
                     <div className="d-flex justify-content-start">
