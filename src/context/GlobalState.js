@@ -4,11 +4,11 @@ import AppReducer from './AppReducer';
 //Initial State 
 const initialState = {
     users:[
-        {id:1,name:'Abtahi Noor'},
+        {id:1,name:'Sumit Saha'},
         {id:2,name:'Freelancer Nasim'},
         {id:3,name:'Jhankar Mahbub'},
-        {id:4,name:'Hero Balam'},
-        {id:5,name:'Ratan'},
+        {id:4,name:'Anisul Islam'},
+        {id:5,name:'Khalid Saifullah'},
     ]
 }
 
@@ -16,7 +16,7 @@ const initialState = {
 export const GlobalContext = createContext(initialState);
 
 //provider component
-export const GlobalProvider = ({childern}) =>{
+export const GlobalProvider = ({children }) => {
     const [state,dispatch] = useReducer(AppReducer,initialState);
 
     //Actions 
@@ -26,13 +26,13 @@ export const GlobalProvider = ({childern}) =>{
             payload:id
         })
     }
-
     return(
         <GlobalContext.Provider value={{
             users: state.users , 
             removeUser
         }}>
-            {childern}
+            {children }
         </GlobalContext.Provider>
     )
 }
+// export default GlobalProvider;
