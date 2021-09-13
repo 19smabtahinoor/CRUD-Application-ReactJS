@@ -2,6 +2,10 @@
 
 ## ▶ Live Site : [CRUD Application Demo](https://crud-application-react-js.vercel.app/)
 
+## ScreenShot
+
+[![ss](https://i.ibb.co/MGnfJf1/image.png)](https://crud-application-react-js.vercel.app/)
+
 ## 💻 Developed By
 
 ![Developer PIC](https://avatars.githubusercontent.com/u/73340940?s=48&v=4)
